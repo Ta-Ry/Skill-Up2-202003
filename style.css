@@ -1,23 +1,72 @@
-.flex
+*
 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #6c6b6b;
+}
+.h-box
+{
+	padding: 30px 20px;
+	width: 100%;
+	background-color: #FF00FF;
 	display: flex;
-	background-color: #00c7ce;
+	justify-content: flex-end;
+	align-items: flex-start;
 }
-.flex > div
+.h-box > div
 {
-	width: 33%;
-	height: 800px;
-	margin: 10px;
-	background-color: #fff;
+	background-color: #FFCCFF;
+	margin: 0 10px;
+	flex-basis: 140px;
+	height: 70px;
 }
-.button
+.h-box > :first-child
+{
+	margin-right: auto;
+}
+main
 {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	width: 200px;
-	min-height: 100px;
-	padding: 10px;
-	color: #fff;
-	background-color: #00c7ce;
+}
+.m-box1
+{
+	background-color: #AEFFBD;
+	width: 300px;
+}
+.m-box2
+{
+	padding: 20px;
+	max-width: 700px;
+	flex-grow: 1;
+	background-color: #008000;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.m-box2 > div
+{
+	background-color: #FFFF00;
+	margin: 10px;
+	flex-basis: 200px;
+	height: 130px;
+}
+
+.f-box
+{
+	padding: 20px;
+	width: 100%;
+	background-color: #0000FF;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.f-box > div
+{
+	background-color: #BBFFFF;
+	margin: 10px;
+	flex-basis: 45%;
+	max-width: 600px;
+	height: 40px;
 }
